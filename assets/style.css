@@ -257,6 +257,11 @@ input[type='submit'] {
     width: 100%;
   }
 }
+#about-me p.about-me__introduction {
+  width: 60%;
+  font-size: 1em;
+  margin: 0.75em 0;
+}
 
 @media all and (max-width: 1000px) {
   #about {
