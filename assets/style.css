@@ -89,9 +89,6 @@ body {
   font-size: 14px;
 }
 
-#gallery {
-  /*	min-height: 100vh; */
-}
 .title {
   text-align: center;
   padding-block: 2em;
@@ -144,6 +141,7 @@ body {
   padding-block: 3em;
 }
 .quote__text {
+  font-size: 2em;
   font-family: Spectral;
   font-style: italic;
   font-weight: 300;
@@ -253,7 +251,8 @@ input[type='submit'] {
     margin-top: 0;
     margin-bottom: 1em;
   }
-  #about-me h6,
+
+  #about-me .about-me__introduction,
   #about-me p {
     width: 100%;
   }
