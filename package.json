@@ -16,5 +16,8 @@
     "url": "https://github.com/MarronFrui/Nina-Carducci-Dev-Educational/issues"
   },
   "homepage": "https://github.com/MarronFrui/Nina-Carducci-Dev-Educational#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "vite": "^8.1.4"
+  }
 }
