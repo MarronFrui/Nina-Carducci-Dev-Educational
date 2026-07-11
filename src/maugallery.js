@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import * as bootstrap from 'bootstrap';
 
 $.fn.mauGallery = function (options) {
   var options = $.extend($.fn.mauGallery.defaults, options);
@@ -49,7 +50,6 @@ $.fn.mauGallery.listeners = function (options) {
   });
 
   $('.gallery').on('click', '.nav-link', $.fn.mauGallery.methods.filterByTag);
-  console.log('listeners wired, gallery count:', $('.gallery').length);
   $('.gallery').on('click', '.mg-prev', () =>
     $.fn.mauGallery.methods.prevImage(options.lightboxId),
   );
@@ -105,7 +105,8 @@ $.fn.mauGallery.methods = {
 
   openLightBox(element, lightboxId) {
     $(`#${lightboxId}`).find('.lightboxImage').attr('src', element.attr('src'));
-    $(`#${lightboxId}`).modal('toggle');
+    // New method to call modal using BS5
+    bootstrap.Modal.getOrCreateInstance(`#${lightboxId}`).toggle();
   },
 
   prevImage() {
@@ -218,7 +219,6 @@ $.fn.mauGallery.methods = {
   },
 
   filterByTag() {
-    console.log('filterByTag fired, this:', this, 'tag:', $(this).data('bs-images-toggle'));
     if ($(this).hasClass('active-tag')) {
       return;
     }

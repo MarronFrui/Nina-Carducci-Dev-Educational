@@ -1,9 +1,9 @@
 import $ from 'jquery';
 import '../scss/style.scss';
+import * as bootstrap from 'bootstrap';
 import './maugallery.js';
 
 $(document).ready(function () {
-  console.log('scripts.js ready, gallery found:', $('.gallery').length);
   $('.gallery').mauGallery({
     columns: {
       xs: 1,
