@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './maugallery.js';
 
 $(document).ready(function () {
+  console.log('scripts.js ready, gallery found:', $('.gallery').length);
   $('.gallery').mauGallery({
     columns: {
       xs: 1,
