@@ -19,5 +19,9 @@
   "description": "",
   "devDependencies": {
     "vite": "^8.1.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.2",
+    "jquery": "^3.7.1"
   }
 }
