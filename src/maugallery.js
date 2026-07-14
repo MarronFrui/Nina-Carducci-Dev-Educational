@@ -116,6 +116,7 @@ $.fn.mauGallery.methods = {
         activeImage = $(this);
       }
     });
+
     let activeTag = $('.tags-bar span.active-tag').data('bs-images-toggle');
     let imagesCollection = [];
     if (activeTag === 'all') {
@@ -131,6 +132,7 @@ $.fn.mauGallery.methods = {
         }
       });
     }
+
     let index = 0,
       next = null;
 
@@ -139,7 +141,7 @@ $.fn.mauGallery.methods = {
         index = i;
       }
     });
-    next = imagesCollection[index] || imagesCollection[imagesCollection.length - 1];
+    next = imagesCollection[(index - 1 + imagesCollection.length) % imagesCollection.length];
     $('.lightboxImage').attr('src', $(next).attr('src'));
   },
   nextImage() {
@@ -172,7 +174,7 @@ $.fn.mauGallery.methods = {
         index = i;
       }
     });
-    next = imagesCollection[index] || imagesCollection[0];
+    next = imagesCollection[(index + 1) % imagesCollection.length];
     $('.lightboxImage').attr('src', $(next).attr('src'));
   },
 

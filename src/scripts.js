@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import '../scss/style.scss';
-import * as bootstrap from 'bootstrap';
 import './maugallery.js';
 
 $(document).ready(function () {
