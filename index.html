@@ -31,6 +31,27 @@
     />
     <!-- <script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script> -->
     <script type="module" defer src="./src/scripts.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci",
+        "description": "Nina Carducci, photographe professionnelle en Nouvelle-Aquitaine. Shooting photo, retouches et albums photos personnalisés pour immortaliser vos moments précieux.",
+        "url": "https://nina-carducci.github.io/",
+        "image": "https://nina-carducci.github.io/assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp",
+        "telephone": "+33 5 56 67 78 89",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "postalCode": "33200",
+          "addressLocality": "Bordeaux",
+          "addressCountry": "FR"
+        },
+        "openingHours": "Mo-Fr 10:00-19:00",
+        "priceRange": "€€",
+        "sameAs": ["https://www.instagram.com/ninacarducci.photo/"]
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -290,6 +311,11 @@
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
             <input type="submit" value="Envoyer" />
           </form>
+          <address class="contact-info">
+            <p>68 avenue Alsace-Lorraine, 33200 Bordeaux</p>
+            <p><a href="tel:+33556677889">05 56 67 78 89</a></p>
+            <p>Du lundi au vendredi, de 10 h à 19 h</p>
+          </address>
         </div>
         <div class="picture right">
           <img src="./assets/images/camera.webp" alt="Appareil photo" />

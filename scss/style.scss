@@ -212,6 +212,14 @@ body {
 .form-container {
   flex: 2;
 }
+.contact-info {
+  margin-top: 2em;
+  line-height: 1.6;
+}
+.contact-info a {
+  color: #000;
+  text-decoration: none;
+}
 form {
   display: flex;
   flex-direction: column;
